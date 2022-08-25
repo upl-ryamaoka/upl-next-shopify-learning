@@ -51,7 +51,7 @@ const Home: NextPage = () => {
 
       <main className='p-20'>
         <h1 className='text-xl font-bold text-slate-700 mb-10'>刀買ってください・・・</h1>
-        <div className='grid grid-cols-6'>
+        <div className='grid grid-cols-6 gap-5'>
         {data?.products?.nodes?.map((n) => <ProductCard key={n.id} data={n} />)}
         </div>
       </main>
